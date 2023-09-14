@@ -1,0 +1,101 @@
+@font-face {
+    font-family: appleFont;
+    src: url(/fonts/Roboto-Light.ttf) ;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: appleFont;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #fff;
+    scroll-behavior: smooth;
+}
+
+body{
+    background: #111005;
+    color: #fff6e5;
+    -ms-overflow-style: none;
+    scrollbar-width: none;  
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+/* ----------------------------------------HEADER------------------------------------*/
+.app-header{
+    width: 100%;
+    position: fixed;
+    top: 65px;
+    display: flex;
+    justify-content: center;
+    font-size: 1.4rem;
+}
+
+.app-header__container{
+    display: flex;
+    justify-content: space-between;
+    width: calc(-3.125px + 87.5%);
+    padding: 5px;
+}
+
+.logo{
+    padding: 0;
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 175px;
+}
+
+.app-header__links{
+    display: flex;
+    position: relative;
+    justify-content: end;
+    width: 100%;
+    list-style: none;
+}
+
+.app-header__links li{
+    margin-right: 50px;
+}
+
+.app-header__switch{
+    width: 48px;
+    height: 24px;
+    cursor: pointer;
+}
+
+/* ----------------------------------------HOME------------------------------------*/
+ .home-intro{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-intro p{
+    margin: 0;
+}
+
+.home-intro-wrapper{
+    position: absolute;
+    display: flex;
+    top: 250px;
+    bottom: 200px;
+    background-color: rgba(0, 0, 0, 0.1);
+    width: calc(-6.25px + 75%)
+}
+
+.home-intro__info{
+    width: 100%;
+    font-size: 3rem;
+}
+
+/* -------------------------------------PROJECTS------------------------------------*/
+  .project1{
+    height: 963px;
+    background-color: #111;
+  }
