@@ -79,8 +79,7 @@ body::-webkit-scrollbar{
 
 .home-intro p{
     margin: 0;
-    background: url("/images/sunset.jpg") fixed;
-    background-size: cover;
+    letter-spacing: -1.2px;
 }
 
 .home-intro-wrapper{
@@ -88,7 +87,6 @@ body::-webkit-scrollbar{
     display: flex;
     top: 250px;
     bottom: 200px;
-    background-color: rgba(0, 0, 0, 0.1);
     width: calc(-6.25px + 75%)
 }
 
