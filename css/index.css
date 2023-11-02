@@ -41,7 +41,7 @@ body::-webkit-scrollbar{
     padding-bottom: 32px;
     display: flex;
     justify-content: center;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     background-color: #111005;
     z-index: 1000;
 }
@@ -101,7 +101,7 @@ body::-webkit-scrollbar{
 
 .home-intro__info{
     width: 100%;
-    font-size: 3rem;
+    font-size: 4rem;
 }
 
 /*-----------------------------------SHOWCASE---------------------------------*/
@@ -115,9 +115,18 @@ body::-webkit-scrollbar{
 
 .projectTemplate{
     height: 100%;
-    width: 80%;
-    min-width: 500px;
+    width: 100%;
+    min-width: 700px;
     min-height: 500px;
+    margin-bottom: 100px;
+}
+
+#project1{
+    background-color: brown;
+}
+
+#project2{
+    background-color: purple;
 }
 
 /*--------------------------------------FOOTER--------------------------------*/
