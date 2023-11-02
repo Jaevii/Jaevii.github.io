@@ -21,7 +21,7 @@
 
     </header>
 
-    <div class="preloader">
+    <div id="preloader">
 
     </div>
 
@@ -56,6 +56,13 @@
             <p><a href="mailto: test123@icloud.com">email</a></p>
         </div>
     </footer>
+
+    <script>
+        var loader = document.getElementById("preloader");
+        window.addEventListener("load", function(){
+            loader.style.display = "none";
+        });
+    </script>
 
     <script src="/js/app.js"></script>
 </body>

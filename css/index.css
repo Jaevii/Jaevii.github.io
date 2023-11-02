@@ -24,6 +24,15 @@ body::-webkit-scrollbar{
     display: none;
 }
 
+/*--------------------------------PRELOADER-----------------------------------*/
+#preloader{
+    background: #000;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 1001;
+}
+
 /*----------------------------------HEADER------------------------------------*/
 .app-header{
     width: 100%;
