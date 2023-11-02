@@ -24,14 +24,17 @@ body::-webkit-scrollbar{
     display: none;
 }
 
-/* ----------------------------------------HEADER------------------------------------*/
+/*----------------------------------HEADER------------------------------------*/
 .app-header{
     width: 100%;
     position: fixed;
-    top: 65px;
+    padding-top: 32px;
+    padding-bottom: 32px;
     display: flex;
     justify-content: center;
     font-size: 1.4rem;
+    background-color: #111005;
+    z-index: 1000;
 }
 
 .app-header__container{
@@ -46,7 +49,7 @@ body::-webkit-scrollbar{
     margin: 0;
     white-space: nowrap;
     overflow: hidden;
-    width: 175px;
+    width: 100%;
 }
 
 .app-header__links{
@@ -61,14 +64,12 @@ body::-webkit-scrollbar{
     margin-right: 50px;
 }
 
-.app-header__switch{
-    width: 48px;
-    height: 24px;
-    cursor: pointer;
+.app-header__links li:hover{
+    text-decoration: underline;
 }
 
-/* ----------------------------------------HOME------------------------------------*/
- .home-intro{
+/*------------------------------------HOME------------------------------------*/
+.home-intro{
     height: 100vh;
     width: 100%;
     display: flex;
@@ -78,6 +79,8 @@ body::-webkit-scrollbar{
 
 .home-intro p{
     margin: 0;
+    background: url("/images/sunset.jpg") fixed;
+    background-size: cover;
 }
 
 .home-intro-wrapper{
@@ -94,8 +97,41 @@ body::-webkit-scrollbar{
     font-size: 3rem;
 }
 
-/* -------------------------------------PROJECTS------------------------------------*/
-  .project1{
-    height: 963px;
-    background-color: #111;
-  }
+/*-----------------------------------SHOWCASE---------------------------------*/
+.projects-wrapper{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.projectTemplate{
+    height: 100%;
+    width: 80%;
+    min-width: 500px;
+    min-height: 500px;
+}
+
+/*--------------------------------------FOOTER--------------------------------*/
+.app-footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 1.4rem;
+    padding-bottom: 15px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
+
+.app-footer__container{
+    display: flex;
+    justify-content: space-around;
+    width: calc(-3.125px + 37.5%);
+    padding: 10px;
+}
+
+.app-footer__container a:hover{
+    text-decoration: underline;
+}
