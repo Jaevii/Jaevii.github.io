@@ -111,12 +111,14 @@ body::-webkit-scrollbar{
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: green;
+    margin-top: 100px;
 }
 
 .projectTemplate{
     height: 100%;
-    width: 100%;
-    min-width: 700px;
+    width: 50%;
+    min-width: 500px;
     min-height: 500px;
     margin-bottom: 100px;
 }
