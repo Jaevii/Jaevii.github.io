@@ -137,7 +137,7 @@ body {
 }
 
 .experience-resume a:hover {
-   color: rgb(255, 0, 0);
+   color: #65e60f;
 }
 
 .experience-resume {
@@ -267,26 +267,7 @@ body {
 }
 
 .project-title a:hover {
-   color: #4a90e2;
-}
-
-.project-links {
-   display: flex;
-   gap: 1rem;
-}
-
-.project-link {
-   color: #666;
-   text-decoration: none;
-   padding: 8px;
-   border-radius: 50%;
-   transition: all 0.3s ease;
-}
-
-.project-link:hover {
-   color: #4a90e2;
-   background: #f0f0f0;
-   transform: translateY(-2px);
+   color: #65e60f;
 }
 
 .project-description p {
