@@ -150,16 +150,18 @@ body {
 }
 
 .experience-item {
+   display: block;
+   text-decoration: none;
+   color: inherit;
    margin-bottom: 3rem;
    padding: 2rem;
    border-radius: 10px;
    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-   transition: transform 0.3s ease, box-shadow 0.3s ease;
+   transition: box-shadow 0.3s ease-in-out, filter 0.3s ease, opacity 0.3s ease;
 }
 
-.experience-item:hover {
-   transform: translateY(-5px);
-   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+.experience-item:hover .experience-title {
+   color: #65e60f;
 }
 
 .experience-header {
@@ -170,17 +172,7 @@ body {
    font-size: 1.4rem;
    margin-bottom: 0.5rem;
    font-weight: 600;
-}
-
-.experience-title a {
-   text-decoration: none;
    color: white;
-   font-weight: 600;
-   transition: color 0.3s ease;
-}
-
-.experience-title a:hover {
-   color: #65e60f;
 }
 
 .experience-date {
@@ -200,6 +192,16 @@ body {
    display: flex;
    flex-wrap: wrap;
    gap: 0.5rem;
+}
+
+.experience-item:hover {
+   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.experience-list:hover .experience-item:not(:hover) {
+   filter: brightness(0.5);
+   opacity: 0.6;
+   transition: filter 0.3s ease, opacity 0.3s ease;
 }
 
 .tech-tag {
@@ -228,17 +230,30 @@ body {
    margin: 0 auto;
 }
 
+.projects-list:hover .project-item:not(:hover) {
+   filter: brightness(0.5);
+   opacity: 0.6;
+   transition: filter 0.3s ease, opacity 0.3s ease;
+}
+
 .project-item {
+   display: block;
+   text-decoration: none;
+   color: inherit;
    margin-bottom: 3rem;
    border-radius: 10px;
    overflow: hidden;
    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-   transition: transform 0.3s ease, box-shadow 0.3s ease;
+   transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease, opacity 0.3s ease;
 }
 
 .project-item:hover {
    transform: translateY(-5px);
    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.project-item:hover .project-title {
+   color: #65e60f;
 }
 
 .project-content {
@@ -256,18 +271,9 @@ body {
 
 .project-title {
    margin: 0;
-}
-
-.project-title a {
    color: white;
-   text-decoration: none;
    font-size: 1.4rem;
    font-weight: 600;
-   transition: color 0.3s ease;
-}
-
-.project-title a:hover {
-   color: #65e60f;
 }
 
 .project-description p {

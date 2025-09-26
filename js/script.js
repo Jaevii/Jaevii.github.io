@@ -39,12 +39,6 @@ function setupScrollAnimations() {
 document.addEventListener('DOMContentLoaded', () => {
     setupScrollAnimations();
     
-    // Add scroll event listeners
-    window.addEventListener('scroll', () => {
-        updateActiveNavLink();
-        handleNavbarScroll();
-    });
-    
     // Add click events to all nav links for smooth scrolling
     navLinks.forEach(link => {
         link.addEventListener('click', (e) => {
