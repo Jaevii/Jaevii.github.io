@@ -1,6 +1,5 @@
 {
     "editor.minimap.enabled": false,
     "editor.wordWrap": "wordWrapColumn",
-    "editor.scrollbar.horizontal": "hidden",
-    "editor.scrollbar.vertical": "hidden"
+    "editor.scrollbar.horizontal": "hidden"
 }
