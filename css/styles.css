@@ -289,6 +289,25 @@ body {
    gap: 0.5rem;
 }
 
+/* QR Code Section */
+.qr-code-section {
+   padding: 40px 0;
+   text-align: center;
+}
+
+.qr-code {
+   max-width: 200px;
+   width: 100%;
+   height: auto;
+   border-radius: 8px;
+   opacity: 0.8;
+   transition: opacity 0.3s ease;
+}
+
+.qr-code:hover {
+   opacity: 1;
+}
+
 /* Footer */
 footer {
    color: white;
