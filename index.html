@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="sv">
   <head>
     <meta charset="UTF-8" />
@@ -85,7 +85,11 @@
               </p>
 
               <p>
-                Currently, I'm working on my master's thesis that explores how post-quantum encryption can be integrated into the WireGuard VPN protocol. The project examines quantum-safe key exchange methods, their performance impact, and how they can future-proof secure network communication.
+                Currently, I'm working on my master's thesis that explores how
+                post-quantum encryption can be integrated into the WireGuard VPN
+                protocol. The project examines quantum-safe key exchange
+                methods, their performance impact, and how they can future-proof
+                secure network communication.
               </p>
 
               <p>
@@ -160,9 +164,31 @@
           </div>
           <div class="experience-resume">
             <h3>
-              <a href="docs/Ludvig_Järvi_CV.pdf" target="_blank" rel="noopener noreferrer"
-                >View full resumé</a
-              >
+              <a
+                href="docs/Ludvig_Järvi_CV.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                >View full resume (CV)
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="icon icon-tabler icons-tabler-outline icon-tabler-external-link"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path
+                    d="M12 6h-6a2 2 0 0 0 -2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-6"
+                  />
+                  <path d="M11 13l9 -9" />
+                  <path d="M15 4h5v5" />
+                </svg>
+              </a>
             </h3>
           </div>
         </div>
@@ -174,15 +200,41 @@
           <h2>Projects</h2>
           <div class="projects-list">
             <!-- Project Template -->
-            <a
-              href="https://github.com/Fraktal-PM3/app"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="project-item"
-            >
+            <div class="project-item">
+              <div class="project-content">
+                <div class="project-header">
+                  <h3 class="project-title">Master's Thesis</h3>
+                  <a
+                    href="https://github.com/Jaevii/masters-thesis"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="project-source-link"
+                    >View source</a
+                  >
+                </div>
+                <div class="project-description">
+                  <p>
+                    Designed, implemented, and evaluated a hybrid WireGuard handshake that supports two NIST-selected Key-Encapsulation Mechanisms: CRYSTALS-Kyber and Hamming Quasi-Cyclic. The implementation enables an empirical comparison of their latency, computational overhead, memory usage, and message size, and contrasts the results against existing post-quantum WireGuard implementations. By quantifying these trade-offs, the work aims to provide practical insights into the real-world viability of post-quantum VPNs and contribute to the broader effort of securing Internet communication against future quantum threats.
+                  </p>
+                </div>
+                <div class="project-technologies">
+                  <span class="tech-tag">Go</span>
+                  <span class="tech-tag">WireGuard</span>
+                  <span class="tech-tag">Post-Quantum Cryptography</span>
+                </div>
+              </div>
+            </div>
+            <div class="project-item">
               <div class="project-content">
                 <div class="project-header">
                   <h3 class="project-title">Fraktal-PM3 app</h3>
+                  <a
+                    href="https://github.com/Fraktal-PM3/app"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="project-source-link"
+                    >View source</a
+                  >
                 </div>
                 <div class="project-description">
                   <p>
@@ -201,17 +253,38 @@
                   <span class="tech-tag">MongoDB</span>
                   <span class="tech-tag">Docker</span>
                 </div>
+                <div class="project-media">
+                  <p class="project-media-title">Media coverage</p>
+                  <div class="project-media-links">
+                    <a
+                      href="https://www.svt.se/nyheter/lokalt/norrbotten/se-studenternas-uppfinning-som-ska-losa-dyra-paketleveranser"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="media-link"
+                      >SVT Nyheter</a
+                    >
+                    <a
+                      href="https://www.ltu.se/aktuellt/nyheter/nyhetsarkiv/2025-12-19-civilingenjorsstudenter-sakrar-framtida-julpaket"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="media-link"
+                      >LTU Nyheter</a
+                    >
+                  </div>
+                </div>
               </div>
-            </a>
-            <a
-              href="https://github.com/Jaevii/Jaevii.github.io"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="project-item"
-            >
+            </div>
+            <div class="project-item">
               <div class="project-content">
                 <div class="project-header">
                   <h3 class="project-title">Personal Portfolio Website</h3>
+                  <a
+                    href="https://github.com/Jaevii/Jaevii.github.io"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="project-source-link"
+                    >View source</a
+                  >
                 </div>
                 <div class="project-description">
                   <p>
@@ -226,7 +299,7 @@
                   <span class="tech-tag">JavaScript</span>
                 </div>
               </div>
-            </a>
+            </div>
           </div>
         </div>
       </section>
@@ -240,6 +313,7 @@
           alt="QR Code"
           class="qr-code"
         />
+        <p>Use this QR-code to share my website!</p>
       </div>
     </section>
 

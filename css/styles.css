@@ -204,6 +204,10 @@ body {
   transition: filter 0.3s ease, opacity 0.3s ease;
 }
 
+.experience-resume a:hover {
+  text-decoration: underline;
+}
+
 .tech-tag {
   background: rgba(0, 0, 0, 0.75);
   color: white;
@@ -277,6 +281,22 @@ body {
   font-weight: 600;
 }
 
+.project-source-link {
+  color: #65e60f;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+  border: 1px solid rgba(101, 230, 15, 0.4);
+  border-radius: 999px;
+  padding: 0.35rem 0.8rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.project-source-link:hover {
+  background-color: #65e60f;
+  color: #111900;
+}
+
 .project-description p {
   font-size: 1rem;
   color: lightgray;
@@ -290,10 +310,48 @@ body {
   gap: 0.5rem;
 }
 
+.project-media {
+  margin-top: 1.25rem;
+}
+
+.project-media-title {
+  color: #c9d2b8;
+  font-size: 0.9rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-bottom: 0.65rem;
+}
+
+.project-media-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+}
+
+.media-link {
+  color: white;
+  text-decoration: none;
+  font-size: 0.95rem;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  background: rgba(255, 255, 255, 0.04);
+  padding: 0.45rem 0.85rem;
+  border-radius: 8px;
+  transition: border-color 0.3s ease, transform 0.3s ease, color 0.3s ease;
+}
+
+.media-link:hover {
+  border-color: #65e60f;
+  color: #65e60f;
+  transform: translateY(-2px);
+}
+
 /* QR Code Section */
 .qr-code-section {
   padding: 40px 0;
   text-align: center;
+  color: white;
+  text-align: center;
+  padding: 2rem 0;
 }
 
 .qr-code {
